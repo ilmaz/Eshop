@@ -41,8 +41,12 @@ namespace AngularEshop.WebApi
             #region Application Services
 
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ISliderService, SliderService>();
+            services.AddScoped<IProductService, ProductService>();
 
             #endregion
+
+
             services.AddControllers();
         }
 
